@@ -1,4 +1,6 @@
-
+if(process.env.NODE_ENV!= 'prod'){
+        require('dotenv').config()
+    }
     
 
 var express = require("express");
@@ -24,4 +26,4 @@ app.get("/home", (req, res) => {
   res.render("index");
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);

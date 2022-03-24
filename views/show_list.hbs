@@ -1,0 +1,17 @@
+<html>
+    <head>
+    </head>
+    <title>List Of All Users</title>
+<body>
+     <ul>
+    {{#each userList}}
+      <li>Name-{{this.name}}<br> Address-{{this.address}} <br>  Model-{{this.model}} <br> Date-{{this.date}} <br> Address-{{this.phoneNumber}} <br></li>
+    {{/each}}
+    </ul>
+
+      <a href="/entry"><button type="button">Make A Entry</button> </a>
+
+    <a href="/home"><button type="button">Home</button> </a>
+
+</body>
+</html>

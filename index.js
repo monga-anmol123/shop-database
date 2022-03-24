@@ -1,6 +1,5 @@
-if(process.env.NODE_ENV!= 'prod'){
-        require('dotenv').config()
-    }
+
+require('dotenv').config()
     
 
 var express = require("express");
